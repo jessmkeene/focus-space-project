@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Space</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .widget-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .widget {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      padding: 20px;
+    }
+
+    .widget h2 {
+      margin: 0 0 15px;
+      font-size: 1.5em;
+      color: #444;
+      text-align: center;
+    }
+
+    .todo-list, .music-player, .search-bar {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .todo-list li, .music-player-item {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .input, .button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="widget-container">
+    <!-- To-Do List Widget -->
+    <div class="widget">
+      <h2>To-Do List</h2>
+      <ul class="todo-list">
+        <li>Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li>
+      </div>
+
+        </h2>
+    </div>
+
+    <!-- Music Player Widget -->
+    <div class="widget">
+      <h2>Music Player</h2>
+      <ul class="music-player">
+        <li class="music-player-item">Song 1</li>
+        <li class="music-player-item">Song 2</li>
+        <li class="music-player-item">Song 3</li>
+      </ul>
+    </div>
+
+    <!-- Search Bar Widget -->
+    <div class="widget">
+      <h2>Search Bar</h2>
+      <input class="input" type="text" placeholder="Search here...">
+      <button class="button">Search</button>
+    </div>
+  </div>
+</body>
+</html>
